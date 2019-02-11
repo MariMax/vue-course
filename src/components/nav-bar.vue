@@ -14,6 +14,7 @@
 </template>
 
 <script>
+// import { Component, Vue } from 'vue-property-decorator';
 import { mapState } from "vuex";
 
 export default {
