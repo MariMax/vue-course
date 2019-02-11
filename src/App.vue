@@ -1,29 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <nav-bar />
+    <main><user-list /></main>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import navBar from "@/components/nav-bar.vue";
+import userList from "@/components/user-list.vue";
 
-@Component({
+export default {
+  name: "App",
+
   components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
+    navBar,
+    userList
+  }
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "./styles/variables.scss";
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+}
+
+main {
+  background: $vue-dark-plus-5;
+  box-sizing: border-box;
+  max-width: $page-width;
+  max-width: $page-width;
+  min-height: 100%;
+  margin: auto;
+  padding: 76px 12px 32px;
 }
 </style>
