@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+
+$font-primary: "Exo 2";
+$vue-green: #2bb982;
+$vue-dark: #34475f;
+$page-width: 930px;
+
+$vue-green-plus-5: lighten($vue-green, 5%);
+$vue-green-plus-10: lighten($vue-green, 10%);
+$vue-green-plus-15: lighten($vue-green, 15%);
+$vue-green-plus-20: lighten($vue-green, 20%);
+$vue-green-plus-25: lighten($vue-green, 25%);
+$vue-green-plus-50: lighten($vue-green, 50%);
+
+$vue-green-minus-5: darken($vue-green, 5%);
+$vue-green-minus-10: darken($vue-green, 10%);
+$vue-green-minus-15: darken($vue-green, 15%);
+$vue-green-minus-20: darken($vue-green, 20%);
+$vue-green-minus-25: darken($vue-green, 25%);
+$vue-green-minus-50: darken($vue-green, 50%);
+
+$vue-dark-plus-5: lighten($vue-dark, 5%);
+$vue-dark-plus-10: lighten($vue-dark, 10%);
+$vue-dark-plus-15: lighten($vue-dark, 15%);
+$vue-dark-plus-20: lighten($vue-dark, 20%);
+$vue-dark-plus-25: lighten($vue-dark, 25%);
+$vue-dark-plus-50: lighten($vue-dark, 50%);
+
+$vue-dark-minus-5: darken($vue-dark, 5%);
+$vue-dark-minus-10: darken($vue-dark, 10%);
+$vue-dark-minus-15: darken($vue-dark, 15%);
+$vue-dark-minus-20: darken($vue-dark, 20%);
+$vue-dark-minus-25: darken($vue-dark, 25%);
+$vue-dark-minus-50: darken($vue-dark, 50%);

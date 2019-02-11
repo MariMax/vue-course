@@ -1,0 +1,58 @@
+@import "./variables.scss";
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font: 16px $font-primary, verdana;
+  color: #eee;
+  background: darken($vue-dark, 5%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: #e0e0e0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: lighten($vue-dark, 50%);
+  padding: 12px 0 12px;
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none;
+}
